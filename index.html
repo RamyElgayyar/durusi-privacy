@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سياسة خصوصية دروسي — Durusi Privacy Policy</title>
+<meta name="description" content="سياسة خصوصية تطبيق دروسي لتتبع الحصص والحضور.">
+<style>
+  :root {
+    --primary: #0E8C82;
+    --text: #1B2530;
+    --muted: #6B7785;
+    --border: #E5E9ED;
+    --bg: #F5F7F9;
+    --surface: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #E8EDF2; --muted: #9AA7B4; --border: #2A3440;
+      --bg: #141A21; --surface: #1B232B; --primary: #35C4B6;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0 16px;
+    background: var(--bg); color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Tahoma, Arial, sans-serif;
+    line-height: 1.8;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 0 80px; }
+  article {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 16px; padding: 28px 24px; margin-bottom: 28px;
+  }
+  h1 { font-size: 1.7rem; margin: 0 0 6px; }
+  h2 { font-size: 1.2rem; margin: 32px 0 10px; color: var(--primary); }
+  h3 { font-size: 1rem; margin: 22px 0 8px; }
+  .updated { color: var(--muted); font-size: .9rem; margin: 0 0 8px; }
+  .lead {
+    background: rgba(14,140,130,.08); border-inline-start: 4px solid var(--primary);
+    padding: 14px 16px; border-radius: 10px; margin: 18px 0;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: .95rem; }
+  th, td { text-align: start; padding: 10px 8px; border-bottom: 1px solid var(--border); }
+  th { color: var(--muted); font-weight: 600; font-size: .85rem; }
+  code { background: var(--bg); padding: 2px 6px; border-radius: 5px; font-size: .9em; }
+  a { color: var(--primary); }
+  .sep { text-align: center; color: var(--muted); margin: 40px 0; letter-spacing: .5em; }
+  section[lang="en"] { direction: ltr; text-align: left; }
+  footer { text-align: center; color: var(--muted); font-size: .85rem; padding-bottom: 40px; }
+</style>
+</head>
+<body>
+<main>
+
+<article lang="ar" dir="rtl">
+  <h1>سياسة خصوصية «دروسي»</h1>
+  <p class="updated">آخر تحديث: ٢٠ سبتمبر ٢٠٢٦</p>
+
+  <h2>من نحن</h2>
+  <p>«دروسي» تطبيق لتنظيم الدروس الخصوصية: تسجيل الحصص والحضور وإصدار تقارير شهرية.</p>
+  <p>جهة التشغيل: <strong>Rami Elgayyar</strong><br>
+     للتواصل: <a href="mailto:rami.elgayyar@gmail.com">rami.elgayyar@gmail.com</a></p>
+
+  <div class="lead">
+    <strong>المبدأ الأساسي:</strong> دروسك تبقى على هاتفك. استخدام التطبيق يتطلب
+    حسابًا (بريد وكلمة سر)، لكن محتوى دروسك لا يغادر جهازك إلا إذا رفعت نسخة
+    بنفسك — والرفع يدوي أو تلقائي حسب اختيارك في الإعدادات.
+    لا تتبّع، ولا إعلانات، ولا تحليلات.
+  </div>
+
+  <h2>ما الذي نجمعه</h2>
+  <table>
+    <tr><th>البيانات</th><th>لماذا</th><th>أين</th></tr>
+    <tr><td>بريدك الإلكتروني</td><td>تسجيل الدخول واستعادة كلمة السر</td><td>Firebase Authentication</td></tr>
+    <tr><td>دروسك وحصصك</td><td>النسخة الاحتياطية السحابية</td><td>Firestore — منطقة الدوحة</td></tr>
+  </table>
+  <p>الإنترنت مطلوب عند أول تسجيل دخول فقط؛ بعدها يعمل التطبيق دون اتصال.</p>
+
+  <h3>الموقع الجغرافي — لا يُجمع</h3>
+  <p>التطبيق يطلب إذن الموقع لميزتين تعملان <strong>على الجهاز فقط</strong>:
+     تحديد مكان الحصة على الخريطة، وتنبيهك عند وصولك لمكان الحصة (نصف قطر ١٥٠ مترًا).</p>
+  <p><strong>موقعك لا يُرسل إلى أي خادم، ولا إلينا، ولا يُسجَّل تاريخ تنقلاتك.</strong>
+     نظام التشغيل وحده يعرف موقعك ويُخطر التطبيق عند دخولك منطقة حصة. إحداثيات
+     مكان الحصة تُحفظ ضمن بيانات الدرس، فتُرفع معها إن رفعت نسخة.</p>
+  <p>خريطة الاختيار تستخدم صور OpenStreetMap، ويصل عنوان IP الخاص بك إلى خوادمهم
+     كما في أي تصفّح — لا نرسل لهم شيئًا عنك.</p>
+
+  <h3>الاشتراك</h3>
+  <p>الدفع يتم عبر Google Play بالكامل. <strong>لا نرى ولا نستقبل بيانات بطاقتك.</strong>
+     نحفظ على هاتفك فقط تاريخ آخر تحقق من صلاحية الاشتراك.</p>
+
+  <h2>بيانات طلابك — مسؤوليتك</h2>
+  <p>أسماء الطلاب التي تُدخلها هي بيانات عن أشخاص آخرين، وقد يكونون <strong>قُصَّرًا</strong>.
+     إن لم ترفع نسخة تبقى على هاتفك ولا نراها أبدًا؛ وإن رفعتها تُحفظ في حسابك.</p>
+  <p>أنت المسؤول عن مشروعية إدخال هذه البيانات. <strong>نقترح استخدام الاسم الأول
+     فقط</strong> أو اسم مستعار يكفيك للتمييز. في نطاق تطبيق اللائحة الأوروبية
+     (GDPR) أو ما يماثلها، تكون أنت «المتحكم في البيانات» ونحن «المعالج».</p>
+
+  <h2>مشاركة البيانات</h2>
+  <p><strong>لا نبيع بياناتك ولا نشاركها لأغراض تسويقية. أبدًا.</strong></p>
+  <ul>
+    <li><strong>Google Firebase</strong> — استضافة الحساب والنسخة السحابية
+        (<a href="https://policies.google.com/privacy" rel="noopener">سياسة خصوصية جوجل</a>)</li>
+    <li><strong>Google Play</strong> — معالجة الاشتراك</li>
+    <li><strong>OpenStreetMap</strong> — صور الخريطة فقط</li>
+  </ul>
+  <p>قد نكشف البيانات إذا ألزمنا القانون بذلك.</p>
+
+  <h2>النسخ الاحتياطي التلقائي من أندرويد</h2>
+  <p>أندرويد قد يحفظ نسخة من بيانات التطبيق في حساب جوجل الخاص بك، مشفّرة بقفل
+     شاشة هاتفك. هذه ميزة من نظام التشغيل لا نتحكم فيها ولا نصل إليها. يمكنك
+     إيقافها من إعدادات هاتفك ← جوجل ← النسخ الاحتياطي.</p>
+
+  <h2>الأمان</h2>
+  <ul>
+    <li>الاتصال بالسحابة مشفّر (HTTPS) دائمًا.</li>
+    <li>قواعد الوصول تمنع أي مستخدم من قراءة بيانات غيره.</li>
+    <li>كلمات السر تديرها Firebase ولا نراها إطلاقًا.</li>
+  </ul>
+
+  <h2>حقوقك</h2>
+  <table>
+    <tr><th>ما تريده</th><th>كيف</th></tr>
+    <tr><td>الاطّلاع على بياناتك</td><td>الإعدادات ← النسخ الاحتياطي ← حفظ نسخة</td></tr>
+    <tr><td>تصحيح بياناتك</td><td>عدّلها في التطبيق ثم ارفع نسخة</td></tr>
+    <tr><td><strong>حذف حسابك وبياناته</strong></td><td>الإعدادات ← الحساب ← حذف الحساب نهائيًا</td></tr>
+    <tr><td>حذف كل شيء</td><td>احذف الحساب ثم أزل التطبيق</td></tr>
+  </table>
+  <p>حذف الحساب فوري ونهائي، ويمسح بريدك ونسختك السحابية. لطلب الحذف دون تثبيت
+     التطبيق، راسلنا على <a href="mailto:rami.elgayyar@gmail.com">rami.elgayyar@gmail.com</a>.</p>
+
+  <h2>مدة الحفظ</h2>
+  <p>نحتفظ ببياناتك ما دام حسابك قائمًا. عند الحذف تُمسح فورًا ولا تُحفظ نسخ.</p>
+
+  <h2>الأطفال</h2>
+  <p>التطبيق موجّه للمعلمين البالغين، ولا نجمع بيانات من الأطفال مباشرةً.
+     راجع قسم «بيانات طلابك» أعلاه.</p>
+
+  <h2>التغييرات</h2>
+  <p>سنحدّث التاريخ أعلاه عند أي تعديل، ونخطرك داخل التطبيق إن كان جوهريًا.</p>
+</article>
+
+<p class="sep">•••</p>
+
+<article lang="en" dir="ltr">
+  <section lang="en">
+  <h1>Durusi Privacy Policy</h1>
+  <p class="updated">Last updated: 20 September 2026</p>
+
+  <h2>Who we are</h2>
+  <p>Durusi helps private tutors track lessons, attendance and monthly reports.</p>
+  <p>Operated by: <strong>Rami Elgayyar</strong><br>
+     Contact: <a href="mailto:rami.elgayyar@gmail.com">rami.elgayyar@gmail.com</a></p>
+
+  <div class="lead">
+    <strong>The core principle:</strong> your lessons stay on your phone. Using the
+    app requires an account (email and password), but your lesson content never
+    leaves your device unless you upload a copy — manually or automatically,
+    your choice in Settings. No tracking, no ads, no analytics.
+  </div>
+
+  <h2>What we collect</h2>
+  <table>
+    <tr><th>Data</th><th>Why</th><th>Where</th></tr>
+    <tr><td>Your email address</td><td>Sign-in and password reset</td><td>Firebase Authentication</td></tr>
+    <tr><td>Your lessons and sessions</td><td>Cloud backup</td><td>Firestore — Doha region</td></tr>
+  </table>
+  <p>Internet is required only for your first sign-in; after that the app works offline.</p>
+
+  <h3>Location — not collected</h3>
+  <p>The app asks for location permission for two features, both entirely
+     <strong>on-device</strong>: picking a lesson's location on the map, and
+     reminding you when you arrive (a 150-metre geofence).</p>
+  <p><strong>Your location is never sent to any server, never to us, and your
+     movements are never logged.</strong> Only your operating system knows where
+     you are; it tells the app when you enter a lesson area. A lesson's
+     coordinates are stored with that lesson, so they are included if you upload a copy.</p>
+  <p>The map uses OpenStreetMap tiles; your IP reaches their servers as with any
+     browsing. We send them nothing about you.</p>
+
+  <h3>Subscription</h3>
+  <p>Payment is handled entirely by Google Play. <strong>We never see or receive
+     your card details.</strong> We store only the date your subscription was last
+     verified, on your phone.</p>
+
+  <h2>Your students' data — your responsibility</h2>
+  <p>The student names you enter are data about other people, who may be
+     <strong>minors</strong>. Without an upload they stay on your phone and we never
+     see them; if you upload, they are stored in your account.</p>
+  <p>You are responsible for the lawfulness of entering this data. <strong>We suggest
+     using first names only</strong>, or a nickname sufficient to tell students apart.
+     Where GDPR or equivalent law applies, you are the data controller and we are
+     the processor.</p>
+
+  <h2>Sharing</h2>
+  <p><strong>We do not sell your data or share it for marketing. Ever.</strong></p>
+  <ul>
+    <li><strong>Google Firebase</strong> — hosts the account and cloud copy
+        (<a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>)</li>
+    <li><strong>Google Play</strong> — processes the subscription</li>
+    <li><strong>OpenStreetMap</strong> — map tiles only</li>
+  </ul>
+  <p>We may disclose data if legally compelled.</p>
+
+  <h2>Android automatic backup</h2>
+  <p>Android may save a copy of the app's data to your Google account, encrypted
+     with your screen lock. This is an operating-system feature we neither control
+     nor can access. Turn it off in Settings → Google → Backup.</p>
+
+  <h2>Security</h2>
+  <ul>
+    <li>Cloud connections are always encrypted (HTTPS).</li>
+    <li>Access rules prevent any user from reading another's data.</li>
+    <li>Passwords are managed by Firebase and never visible to us.</li>
+  </ul>
+
+  <h2>Your rights</h2>
+  <table>
+    <tr><th>What you want</th><th>How</th></tr>
+    <tr><td>See your data</td><td>Settings → Backup → Save a backup</td></tr>
+    <tr><td>Correct your data</td><td>Edit it in the app, then upload a copy</td></tr>
+    <tr><td><strong>Delete your account and data</strong></td><td>Settings → Account → Delete account permanently</td></tr>
+    <tr><td>Delete everything</td><td>Delete the account, then uninstall</td></tr>
+  </table>
+  <p>Deletion is immediate and permanent. To request deletion without installing
+     the app, email <a href="mailto:rami.elgayyar@gmail.com">rami.elgayyar@gmail.com</a>.</p>
+
+  <h2>Retention</h2>
+  <p>We keep your data while your account exists. On deletion it is erased
+     immediately, with no copies retained.</p>
+
+  <h2>Children</h2>
+  <p>The app is intended for adult tutors and we do not collect data from children
+     directly. See "Your students' data" above.</p>
+
+  <h2>Changes</h2>
+  <p>We will update the date above for any change, and notify you in the app if
+     the change is significant.</p>
+  </section>
+</article>
+
+<footer>دروسي · Durusi</footer>
+</main>
+</body>
+</html>
